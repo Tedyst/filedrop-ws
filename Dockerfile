@@ -1,5 +1,6 @@
 FROM node:alpine as build
 
+LABEL org.opencontainers.image.source https://github.com/Tedyst/filedrop-ws
 WORKDIR /app
 ENV PATH /app/node_modules/.bin:$PATH
 COPY . /app
